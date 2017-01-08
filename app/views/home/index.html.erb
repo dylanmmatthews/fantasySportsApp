@@ -1,0 +1,14 @@
+<div class="top-introduction">
+	<h1>Average Joe's Fantasy Talk</h1>
+	<p>Your place to find all things fantasy talk with upcoming fantasy experts</p>
+</div>
+
+<div id="show-author">
+	<% @author.each do |author| %>
+	<p> <%= "#{author.id}" %><p>
+	<p> <%= "#{author.author}" %><p>
+	<% end %>
+</div>
+
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
