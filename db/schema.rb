@@ -10,12 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170107173736) do
+ActiveRecord::Schema.define(version: 20170109235155) do
 
   create_table "authors", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "author"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "blog_posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "title"
+    t.string   "summary"
+    t.text     "content",                 limit: 65535
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
+    t.integer  "author_id"
+    t.integer  "category_id"
+    t.string   "hero_image_file_name"
+    t.string   "hero_image_content_type"
+    t.integer  "hero_image_file_size"
+    t.datetime "hero_image_updated_at"
+    t.index ["author_id"], name: "index_blog_posts_on_author_id", using: :btree
+    t.index ["category_id"], name: "index_blog_posts_on_category_id", using: :btree
   end
 
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -24,4 +40,22 @@ ActiveRecord::Schema.define(version: 20170107173736) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "ckeditor_assets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "data_file_name",               null: false
+    t.string   "data_content_type"
+    t.integer  "data_file_size"
+    t.string   "data_fingerprint"
+    t.integer  "assetable_id"
+    t.string   "assetable_type",    limit: 30
+    t.string   "type",              limit: 30
+    t.integer  "width"
+    t.integer  "height"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.index ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
+    t.index ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
+  end
+
+  add_foreign_key "blog_posts", "authors"
+  add_foreign_key "blog_posts", "categories"
 end

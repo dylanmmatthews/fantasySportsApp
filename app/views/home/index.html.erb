@@ -3,12 +3,37 @@
 	<p>Your place to find all things fantasy talk with upcoming fantasy experts</p>
 </div>
 
-<div id="show-author">
-	<% @author.each do |author| %>
-	<p> <%= "#{author.id}" %><p>
-	<p> <%= "#{author.author}" %><p>
+<div id="show-recent-post">
+	<% @post.each do |post| %>
+	<%= image_tag("#{post.hero_image}") %>
+	<p> <%= "#{post.title}" %><p>
+	<p> <%= "#{post.author.author}" %><p>
+	<p> <%= "#{post.summary}" %><p>
+	<p> <%= "#{post.content.html_safe}" %><p>
 	<% end %>
 </div>
 
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div id="category-field">
+	<div class="category-about">
+		<h1>Weekly Writeup</h1>
+		<p>This category is a write up for this weeks content.....</p>
+	</div>
+</div>
+<div id="category-field">
+	<div class="category-about">
+		<h1>Weekly Writeup</h1>
+		<p>This category is a write up for this weeks content.....</p>
+	</div>
+</div>
+<div id="category-field">
+	<div class="category-about">
+		<h1>Weekly Writeup</h1>
+		<p>This category is a write up for this weeks content.....</p>
+	</div>
+</div>
+<div id="category-field">
+	<div class="category-about">
+		<h1>Weekly Writeup</h1>
+		<p>This category is a write up for this weeks content.....</p>
+	</div>
+</div>
