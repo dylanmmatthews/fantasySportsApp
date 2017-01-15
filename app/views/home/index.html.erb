@@ -1,39 +1,52 @@
 <div class="top-introduction">
+	<img src="/assets/mlb-logo.jpg"></img>
 	<h1>Average Joe's Fantasy Talk</h1>
-	<p>Your place to find all things fantasy talk with upcoming fantasy experts</p>
 </div>
 
-<div id="show-recent-post">
-	<% @post.each do |post| %>
-	<%= image_tag("#{post.hero_image}") %>
-	<p> <%= "#{post.title}" %><p>
-	<p> <%= "#{post.author.author}" %><p>
-	<p> <%= "#{post.summary}" %><p>
-	<p> <%= "#{post.content.html_safe}" %><p>
-	<% end %>
+<div class="show-recent-post">
+	<div id="screen">
+		<div class="quick-view">
+			<% @post.each do |post| %>
+			<%= image_tag("#{post.hero_image}") %>
+			<div class="post-information">
+				<a href="#"><h2><%= "#{post.title}" %></h2></a>
+				<p>Written By: <%= "#{post.author.author}" %><p>
+				<p> <%= "#{post.summary}" %><p>
+			<% end %>
+			</div>
+		</div>
+	</div>
 </div>
 
-<div id="category-field">
+<div class="category-field">
 	<div class="category-about">
-		<h1>Weekly Writeup</h1>
+		<a href="#" style="text-decoration: none">
+			<h1>Weekly Writeup</h1>
+		</a>
 		<p>This category is a write up for this weeks content.....</p>
 	</div>
 </div>
-<div id="category-field">
+<div class="category-field">
 	<div class="category-about">
-		<h1>Weekly Writeup</h1>
+		<a href="#" style="text-decoration: none">
+			<h1>Prospects</h1>
+		</a>
 		<p>This category is a write up for this weeks content.....</p>
 	</div>
 </div>
-<div id="category-field">
+<div class="category-field">
 	<div class="category-about">
-		<h1>Weekly Writeup</h1>
+		<a href="#" style="text-decoration: none">
+			<h1>Who's Hot, Who's Not</h1>
+		</a>
 		<p>This category is a write up for this weeks content.....</p>
 	</div>
 </div>
-<div id="category-field">
+<div class="category-field">
 	<div class="category-about">
-		<h1>Weekly Writeup</h1>
+		<a href="#" style="text-decoration: none">
+			<h1>Everything Dynasty</h1>
+		</a>
 		<p>This category is a write up for this weeks content.....</p>
 	</div>
 </div>
