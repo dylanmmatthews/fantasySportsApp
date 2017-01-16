@@ -4,7 +4,9 @@
 			<% @post.each do |post| %>
 			<%= image_tag("#{post.hero_image}") %>
 			<div class="post-information">
-				<a href="#"><h2><%= "#{post.title}" %></h2></a>
+				<a href="<%= post_path(post.id) %>">
+					<h2><%= "#{post.title}" %></h2>
+				</a>
 				<p>Written By: <%= "#{post.author.author}" %><p>
 				<p> <%= "#{post.summary}" %><p>
 			<% end %>
@@ -15,7 +17,7 @@
 
 <div class="category-field">
 	<div class="category-about">
-		<a href="#" style="text-decoration: none">
+		<a href="/weekly" style="text-decoration: none">
 			<h1>Weekly Writeup</h1>
 		</a>
 		<p>This category is a write up for this weeks content.....</p>
@@ -23,7 +25,7 @@
 </div>
 <div class="category-field">
 	<div class="category-about">
-		<a href="#" style="text-decoration: none">
+		<a href="/prospects" style="text-decoration: none">
 			<h1>Prospects</h1>
 		</a>
 		<p>This category is a write up for this weeks content.....</p>
@@ -31,7 +33,7 @@
 </div>
 <div class="category-field">
 	<div class="category-about">
-		<a href="#" style="text-decoration: none">
+		<a href="/hot-and-not" style="text-decoration: none">
 			<h1>Who's Hot, Who's Not</h1>
 		</a>
 		<p>This category is a write up for this weeks content.....</p>
@@ -39,7 +41,7 @@
 </div>
 <div class="category-field">
 	<div class="category-about">
-		<a href="#" style="text-decoration: none">
+		<a href="dynasty" style="text-decoration: none">
 			<h1>Everything Dynasty</h1>
 		</a>
 		<p>This category is a write up for this weeks content.....</p>
