@@ -1,0 +1,27 @@
+<!-- <div class="top-menu-dropdown" style="display: block">
+	<li><a href="/all-posts">Blog Posts</a></li>
+	<li><a href="/about-us">About Us</a></li>
+	<li><a href="/contact-us">Contact Us</a></li>
+
+</div>
+<div class="top-menu-right" style="display: block">
+	<a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</div
+ -->
+<div class="dropdown">
+<button onclick="dropdown()" mouseout="fade()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="/all-posts">Blog Posts</a>
+    <a href="/about">About Us</a>
+    <a href="/contact">Contact Us</a>
+  </div>
+</div>
+
+<script>
+function dropdown() {
+	document.getElementById('myDropdown').classList.toggle("show");
+}
+function mouseout() {
+	document.getElementById('myDropdown').fadeOut();
+}
+</script>
