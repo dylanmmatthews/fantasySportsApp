@@ -1,1 +1,16 @@
-Hello
+<div class="blog-post-content">
+	<div class="screen">
+		<div class="blog-post">
+			<%= image_tag("#{@post.hero_image}") %>
+			<div class="post-title">
+				<h1><%= @post.title %></h1>
+			</div>
+			<div class="post-author">
+				<h2>By: <%= @post.author.author %></h2>
+			</div>
+			<div class="post-content">
+				<p><%= @post.content.html_safe %></p>
+			</div>
+		</div>
+	</div>
+</div>
