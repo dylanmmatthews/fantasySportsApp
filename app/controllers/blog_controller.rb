@@ -3,6 +3,6 @@ class BlogController < ApplicationController
   		@post = BlogPost.find(params[:id])
 	end
 	def posts
-		@categories = Category.all #Global Header
+		@posts = BlogPost.all.order('created_at desc')
 	end
 end

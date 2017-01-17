@@ -1,0 +1,19 @@
+<div class="category-post">
+	<div class="description">
+		<h1>Fantasy Baseball Blog Posts</h1>
+		<p>Our authors work hard on creating quality content based on fantasy baseball keeper leagues. Many of our authors have competed and had success doing so as an active owner. Although you may not agree with all content present, we encourage you to comment and share your opinion. <i>Users who post foul or obscene language will be blocked from commenting on the board.</i> Enjoy!</p>
+	</div>
+	<div class="posts">
+		<% @posts.each do |post| %>
+		<div class="post">
+			<a href="<%= post_path(post.id) %>" style="text-decoration: none">
+				<h1><%= "#{post.title}" %></h1>
+			</a>
+			<a href="<%= post_path(post.id) %>">
+				<%= image_tag("#{post.hero_image}") %>
+			</a>
+			<p> <%= "#{post.summary}" %>
+		</div>
+		<% end %>
+	</div>
+</div>

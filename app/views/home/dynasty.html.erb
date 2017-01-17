@@ -1,1 +1,19 @@
-Dynasty
+<div class="category-post">
+	<div class="description">
+		<h1>This is the featured weekly write-ups!</h1>
+		<p>Descption..............</p>
+	</div>
+	<div class="posts">
+		<% @posts.each do |post| %>
+		<div class="post">
+			<a href="<%= post_path(post.id) %>" style="text-decoration: none">
+				<h1><%= "#{post.title}" %></h1>
+			</a>
+			<a href="<%= post_path(post.id) %>">
+				<%= image_tag("#{post.hero_image}") %>
+			</a>
+			<p> <%= "#{post.summary}" %>
+		</div>
+		<% end %>
+	</div>
+</div>

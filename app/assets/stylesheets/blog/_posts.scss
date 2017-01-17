@@ -1,0 +1,68 @@
+.blog-posts-overview {
+	background: image-url('/assets/background-bb-image.jpg') 0 0 no-repeat;
+	background-size: cover;
+	overflow: auto;
+
+	.page-overview {
+		width: 85%;
+		margin: 50px auto;
+		background-color: #edeff2;
+		padding: 25px;
+		border: 5px solid #c62917;
+
+		h1 {
+			font-family: sans-serif;
+			color: #3b5998;
+		}
+
+		p {
+			font-family: sans-serif;
+		}
+	}
+
+	.all-posts {
+		width: 85%;
+		margin: 20px auto;
+		background-color: #edeff2;
+		padding: 25px;
+		border: 5px solid #c62917;
+
+		a img {
+			border: 3px solid #c62917;
+			height: 200px;
+			width: 300px;
+			display: inline-block;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+
+		.post-title {
+			display: inline-block;
+			a h1 {
+				margin: 0;
+				font-family: sans-serif;
+				color: #3b5998;
+				font-size: 36px;
+			}
+
+			a h1:hover {
+				color: #c62917;
+			}
+		}
+
+		.post-author {
+			display: inline-block;
+			h2 {
+				margin: 0;
+				font-size: 20px;
+				font-family: sans-serif;
+			}
+		}
+
+		.post-content {
+			width: 500px;
+			float: right;
+			display: inline-block;
+		}
+	}
+}
