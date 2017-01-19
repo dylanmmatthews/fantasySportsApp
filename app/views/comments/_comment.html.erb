@@ -3,7 +3,7 @@
 	<small>Submitted <%= time_ago_in_words(comment.created_at) %> ago</small>
 
 	<%= form_for [comment, Comment.new] do |f| %>
-	<%= f.text_area :body, placeholder: "Add a reply" %><br/>
+	<%= f.text_area :body, required: true, placeholder: "Add a reply" %><br/>
 	<%= f.submit "Reply" %>
 	<% end %>
 
