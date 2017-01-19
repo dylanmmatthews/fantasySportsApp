@@ -10,7 +10,7 @@
 
     h1 {
         display: inline-block;
-        color: #fff;
+        color: #edeff2;
         font-family: sans-serif;
         font-weight: 600;
         margin-left: 20px;
@@ -22,7 +22,7 @@
         float: right;
         font-size: 42px;
         a i {
-            color: #bfbfbf;
+            color: #edeff2;
         }
         a i:hover {
             color: #c62917;
@@ -33,12 +33,12 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    max-width: 115px;
-    background-color: #bfbfbf;
+    width: 115px;
+    background-color: #edeff2;
     overflow: auto;
     right: 15px;
     top: 15px;
-    text-align: center;
+    text-align: left;
     box-shadow: 5px 5px 15px #888888;
     font-size: 15px;
 
@@ -48,6 +48,10 @@
         text-decoration: none;
         color: #c62917;
         font-family: sans-serif;
+
+        p {
+            margin: 0 5px;
+        }
     }
 
     a:hover {

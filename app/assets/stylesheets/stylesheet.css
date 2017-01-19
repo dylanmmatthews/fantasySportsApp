@@ -1,3 +1,4 @@
 body{margin:0}
 @import 'globalHeader/global_header.scss';
+@import 'globalHeader/global_footer.scss';
 
