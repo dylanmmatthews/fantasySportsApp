@@ -1,66 +1,140 @@
-.top-introduction {
-    background-color: #3b5998;
-    min-height: 55px;
+@media (max-width: 480px) {
+    .top-introduction {
+        background-color: #3b5998;
+        min-height: 55px;
 
-    img {
-        height: 75px;
-        display: inline-block;
-        float: left;
-    }
+        a img {
+            height: 35px;
+            display: inline-block;
+            float: left;
+            padding: 10px 0 0 5px;
+        }
 
-    h1 {
-        display: inline-block;
-        color: #edeff2;
-        font-family: sans-serif;
-        font-weight: 600;
-        margin-left: 20px;
-    }
-
-    .dropdown-menu {
-        padding: 15px;
-        display: inline-block;
-        float: right;
-        font-size: 42px;
-        a i {
+        h1 {
+            font-size: 20px;
+            display: inline-block;
             color: #edeff2;
+            font-family: sans-serif;
+            font-weight: 600;
+            margin-left: 10px;
         }
-        a i:hover {
-            color: #c62917;
+
+        .dropdown-menu {
+            padding: 1px;
+            display: inline-block;
+            float: right;
+            font-size: 42px;
+            a i {
+                color: #edeff2;
+            }
+            a i:hover {
+                color: #c62917;
+            }
         }
-    }
-}
+    } 
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 115px;
-    background-color: #edeff2;
-    overflow: auto;
-    right: 15px;
-    top: 15px;
-    text-align: left;
-    box-shadow: 5px 5px 15px #888888;
-    font-size: 15px;
-
-    a {
-        padding: 5px 15px;
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 115px;
+        background-color: #edeff2;
+        overflow: auto;
+        right: 2px;
+        top: 2px;
+        text-align: left;
+        box-shadow: 5px 5px 15px #888888;
         font-size: 15px;
-        text-decoration: none;
-        color: #c62917;
-        font-family: sans-serif;
 
-        p {
-            margin: 0 5px;
+        a {
+            padding: 5px 15px;
+            font-size: 15px;
+            text-decoration: none;
+            color: #c62917;
+            font-family: sans-serif;
+
+            p {
+                margin: 0 5px;
+            }
+        }
+
+        a:hover {
+            color: #3b5998;
+        }
+    } 
+
+    .dropdown-menu:hover .dropdown-content {
+        display: block;
+    }
+
+    .show{display: block;} 
+}
+
+@media (min-width: 481px) {
+    .top-introduction {
+        background-color: #3b5998;
+        min-height: 55px;
+
+        img {
+            height: 75px;
+            display: inline-block;
+            float: left;
+            padding: 2px 0 0 2px;
+        }
+
+        h1 {
+            display: inline-block;
+            color: #edeff2;
+            font-family: sans-serif;
+            font-weight: 600;
+            margin-left: 20px;
+        }
+
+        .dropdown-menu {
+            padding: 15px;
+            display: inline-block;
+            float: right;
+            font-size: 42px;
+            a i {
+                color: #edeff2;
+            }
+            a i:hover {
+                color: #c62917;
+            }
         }
     }
 
-    a:hover {
-        color: #3b5998;
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 115px;
+        background-color: #edeff2;
+        overflow: auto;
+        right: 15px;
+        top: 15px;
+        text-align: left;
+        box-shadow: 5px 5px 15px #888888;
+        font-size: 15px;
+
+        a {
+            padding: 5px 15px;
+            font-size: 15px;
+            text-decoration: none;
+            color: #c62917;
+            font-family: sans-serif;
+
+            p {
+                margin: 0 5px;
+            }
+        }
+
+        a:hover {
+            color: #3b5998;
+        }
     }
-}
 
-.dropdown-menu:hover .dropdown-content {
-    display: block;
-}
+    .dropdown-menu:hover .dropdown-content {
+        display: block;
+    }
 
-.show{display: block;}
+    .show{display: block;}
+}
