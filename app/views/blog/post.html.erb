@@ -11,6 +11,26 @@
 			<div class="post-content">
 				<p><%= @post.content.html_safe %></p>
 			</div>
+			<div class="social-share">
+				<div class="btn-social">
+					<a class="js-social-share twitter" style="color: #64ACD1"
+					href="https://twitter.com/intent/tweet?text=“<%= yield :title %>”&url=<%= yield :url %>&via=twitter" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')">
+						<i class="fa fa-twitter" aria-hidden="true">
+						</i>
+					</a>
+				</div>
+				<div class="btn-social">
+					<a class="js-social-share facebook" style="color: #375FAE"
+					href="https://www.facebook.com/sharer/sharer.php?u=<%= yield :url %>" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')">
+						<i class="fa fa-facebook-official" aria-hidden="true">
+						</i>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
+
+
+<meta property="og:title" content="Title <%= @post.title %>">
+<meta name="twitter:title" content="Here is a title">

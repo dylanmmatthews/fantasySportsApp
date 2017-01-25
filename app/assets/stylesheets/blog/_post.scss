@@ -70,6 +70,21 @@
 						font-family: sans-serif;
 					}
 				}
+
+				.social-share {
+					padding: 5px;
+					height: 25px;
+
+					.btn-social {
+						display: inline-block;
+						float: right;
+						padding-left: 5px;
+
+						a {
+							font-size: 28px;
+						}
+					}
+				}
 			}
 		}
 	}
