@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170119232715) do
+=======
+ActiveRecord::Schema.define(version: 20170119051031) do
+>>>>>>> feature/avgJoe-comments
 
   create_table "authors", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "author"
@@ -65,6 +69,7 @@ ActiveRecord::Schema.define(version: 20170119232715) do
     t.string   "name"
   end
 
+<<<<<<< HEAD
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
@@ -82,6 +87,7 @@ ActiveRecord::Schema.define(version: 20170119232715) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+=======
+>>>>>>> feature/avgJoe-comments
   add_foreign_key "blog_posts", "authors"
-  add_foreign_key "blog_posts", "categories"
-end
+  add_foreign_key "blog_posts",n

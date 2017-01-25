@@ -19,4 +19,11 @@ get '/dynasty', to: 'home#dynasty'
 root 'home#index'
 
 resources :home
+
+	resources :blog_post do 
+		resources :comments
+	end
+	resources :comments do 
+		resources :comments
+	end
 end
