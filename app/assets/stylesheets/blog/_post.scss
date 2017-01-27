@@ -1,90 +1,83 @@
-@media (max-width: 480px) {
-	.blog-post-content {
-		.screen {
-			.blog-post {
-				width: 100% !important;
-				border: none !important;
+.blog-post-content {
+	background: url('/assets/background-bb-image.jpg') 0 0 no-repeat;
+	background-size: cover;
+	overflow: auto; 
 
-				img {
-					border-bottom: 5px solid #c62917;
-					border-top: 10px solid #c62917;
+	.screen {
+		background-color: rgba(0,0,0,.5);
+
+		.blog-post {
+			background-color: #edeff2;
+			width: 845px;
+			margin: auto;
+			border: 5px solid #c62917;
+
+			img {
+				width: 100%;
+				max-height: 400px;
+			}
+
+			.post-title {
+				display: inline-block;
+				padding: 10px;
+				color: #3b5998;
+				h1 {
+					margin: 0;
+					font-size: 36px;
+					font-family: sans-serif;
 				}
+			}
 
-				.post-author {
-					padding-left: 10px !important;
+			.post-author {
+				display: inline-block;
+				padding: 5px;
+				color: #c62917;
+				h2 {
+					margin: 0;
+					font-size: 18px;
+					font-family: sans-serif;
+				}
+			}
+
+			.post-content {
+				padding: 0 15px 15px;
+
+				p {
+					line-height: 22px;
+					font-size: 16px;
+					font-family: sans-serif;
+				}
+			}
+
+			.social-share {
+				padding: 5px;
+				height: 25px;
+
+				.btn-social {
+					display: inline-block;
+					float: right;
+					padding-left: 5px;
+
+					a {
+						font-size: 28px;
+					}
 				}
 			}
 		}
-	}
-}
 
-@media (min-width: 481px) {
+		.comments {
+			margin: 15px;
 
-	.blog-post-content {
-		background: url('/assets/background-bb-image.jpg') 0 0 no-repeat;
-		background-size: cover;
-		overflow: auto; 
+			h3 {
+				color: #3b5998;
+				font-family: sans-serif;
+				margin: 0;
+				padding-bottom: 5px;
+				font-size: 26px;
+			}
 
-		.screen {
-			background-color: rgba(0,0,0,.5);
-
-			.blog-post {
-				background-color: #edeff2;
-				width: 845px;
-				margin: auto;
-				border: 5px solid #c62917;
-
-				img {
-					width: 100%;
-					max-height: 400px;
-				}
-
-				.post-title {
-					display: inline-block;
-					padding: 10px;
-					color: #3b5998;
-					h1 {
-						margin: 0;
-						font-size: 36px;
-						font-family: sans-serif;
-					}
-				}
-
-				.post-author {
-					display: inline-block;
-					padding: 5px;
-					color: #c62917;
-					h2 {
-						margin: 0;
-						font-size: 18px;
-						font-family: sans-serif;
-					}
-				}
-
-				.post-content {
-					padding: 0 15px 15px;
-
-					p {
-						line-height: 22px;
-						font-size: 16px;
-						font-family: sans-serif;
-					}
-				}
-
-				.social-share {
-					padding: 5px;
-					height: 25px;
-
-					.btn-social {
-						display: inline-block;
-						float: right;
-						padding-left: 5px;
-
-						a {
-							font-size: 28px;
-						}
-					}
-				}
+			hr {
+				margin-bottom: 10px;
 			}
 		}
 	}

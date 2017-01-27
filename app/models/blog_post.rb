@@ -1,4 +1,6 @@
 class BlogPost < ApplicationRecord
+	has_many :comments, as: :commentable
+
 	has_attached_file :hero_image
 
 	validates_attachment_content_type :hero_image, :content_type => /\Aimage\/.*\Z/
