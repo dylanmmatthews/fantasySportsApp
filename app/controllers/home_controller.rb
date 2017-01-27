@@ -3,16 +3,16 @@ class HomeController < ApplicationController
   	@post = BlogPost.limit(1).order("created_at desc")
   end
   def weekly
-    @posts = BlogPost.all
+    @posts = BlogPost.where(:category_id => 2).all
   end
   def prospects
-    @posts = BlogPost.all
+    @posts = BlogPost.where(:category_id => 1).all
   end
   def hotornot
-    @posts = BlogPost.all
+    @posts = BlogPost.where(:category_id => 3).all
   end
   def dynasty
-    @posts = BlogPost.all
+    @posts = BlogPost.where(:category_id => 4).all
   end
   def about
   end
