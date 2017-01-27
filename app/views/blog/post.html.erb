@@ -1,13 +1,11 @@
 <% content_for :head do %>
 	<!-- Facebook Meta Tags -->
 	<meta property="og:title" content="<%= @post.title %>"/>
-	<meta property="og:type" content="article" />
-	<meta property="og:image" content="<%= image_tag("#{@post.hero_image}") %>" />
-	<meta property="og:description" content="<%= @post.summary %>" />
+	<meta property="og:type" content="article"/>
+	<meta property="og:description" content="<%= @post.summary %>"/>
 	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="<%= @post.summary %>"/>
-	<meta name="twitter:title" content="<%= @post.title %>" />
-	<meta name="twitter:image" content="<%= image_tag("#{@post.hero_image}") %>"/>
+	<meta name="twitter:title" content="<%= @post.title %>"/>
 <% end %>
 
 <div class="blog-post-content">
