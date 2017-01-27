@@ -1,0 +1,935 @@
+/* line 1, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content {
+  background: url("/assets/background-bb-image.jpg") 0 0 no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+/* line 6, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 9, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post {
+  background-color: #edeff2;
+  width: 845px;
+  margin: auto;
+  border: 5px solid #c62917;
+}
+/* line 15, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post img {
+  width: 100%;
+  max-height: 400px;
+}
+/* line 20, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-title {
+  display: inline-block;
+  padding: 10px;
+  color: #3b5998;
+}
+/* line 24, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-title h1 {
+  margin: 0;
+  font-size: 36px;
+  font-family: sans-serif;
+}
+/* line 31, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-author {
+  display: inline-block;
+  padding: 5px;
+  color: #c62917;
+}
+/* line 35, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-author h2 {
+  margin: 0;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+/* line 42, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-content {
+  padding: 0 15px 15px;
+}
+/* line 45, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-content p {
+  line-height: 22px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+/* line 52, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .social-share {
+  padding: 5px;
+  height: 25px;
+}
+/* line 56, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .social-share .btn-social {
+  display: inline-block;
+  float: right;
+  padding-left: 5px;
+}
+/* line 61, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .social-share .btn-social a {
+  font-size: 28px;
+}
+/* line 68, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .comments {
+  margin: 15px;
+}
+/* line 71, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .comments h3 {
+  color: #3b5998;
+  font-family: sans-serif;
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 26px;
+}
+/* line 79, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .comments hr {
+  margin-bottom: 10px;
+}
+
+/* line 1, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview {
+  background: url(/assets/background-bb-image.jpg) 0 0 no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+/* line 6, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .page-overview {
+  width: 85%;
+  margin: 50px auto;
+  background-color: #edeff2;
+  padding: 25px;
+  border: 5px solid #c62917;
+}
+/* line 13, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .page-overview h1 {
+  font-family: sans-serif;
+  color: #3b5998;
+}
+/* line 18, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .page-overview p {
+  font-family: sans-serif;
+}
+/* line 23, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts {
+  width: 85%;
+  margin: 20px auto;
+  background-color: #edeff2;
+  padding: 25px;
+  border: 5px solid #c62917;
+}
+/* line 30, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts a img {
+  border: 3px solid #c62917;
+  height: 200px;
+  width: 300px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+/* line 39, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-title {
+  display: inline-block;
+}
+/* line 41, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-title a h1 {
+  margin: 0;
+  font-family: sans-serif;
+  color: #3b5998;
+  font-size: 36px;
+}
+/* line 48, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-title a h1:hover {
+  color: #c62917;
+}
+/* line 53, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-author {
+  display: inline-block;
+}
+/* line 55, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-author h2 {
+  margin: 0;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+/* line 62, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-content {
+  width: 500px;
+  float: right;
+  display: inline-block;
+}
+
+/* line 1, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/comments/_comment.scss */
+textarea {
+  width: 100%;
+  border: 3px solid #3b5998;
+}
+
+/* line 6, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/comments/_comment.scss */
+input[type="submit"] {
+  background-color: #3b5998;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 5px;
+}
+
+/* line 14, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/comments/_comment.scss */
+li {
+  font-family: sans-serif;
+}
+
+/* line 18, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/comments/_comment.scss */
+input {
+  border: 3px solid #3b5998;
+  margin-bottom: 2px;
+  padding: 2px;
+}
+/* line 1, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content {
+  background: url("/assets/background-bb-image.jpg") 0 0 no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+/* line 6, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 9, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post {
+  background-color: #edeff2;
+  width: 845px;
+  margin: auto;
+  border: 5px solid #c62917;
+}
+/* line 15, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post img {
+  width: 100%;
+  max-height: 400px;
+}
+/* line 20, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-title {
+  display: inline-block;
+  padding: 10px;
+  color: #3b5998;
+}
+/* line 24, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-title h1 {
+  margin: 0;
+  font-size: 36px;
+  font-family: sans-serif;
+}
+/* line 31, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-author {
+  display: inline-block;
+  padding: 5px;
+  color: #c62917;
+}
+/* line 35, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-author h2 {
+  margin: 0;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+/* line 42, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-content {
+  padding: 0 15px 15px;
+}
+/* line 45, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .post-content p {
+  line-height: 22px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+/* line 52, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .social-share {
+  padding: 5px;
+  height: 25px;
+}
+/* line 56, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .social-share .btn-social {
+  display: inline-block;
+  float: right;
+  padding-left: 5px;
+}
+/* line 61, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .blog-post .social-share .btn-social a {
+  font-size: 28px;
+}
+/* line 68, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .comments {
+  margin: 15px;
+}
+/* line 71, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .comments h3 {
+  color: #3b5998;
+  font-family: sans-serif;
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 26px;
+}
+/* line 79, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_post.scss */
+.blog-post-content .screen .comments hr {
+  margin-bottom: 10px;
+}
+/* line 1, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview {
+  background: url(/assets/background-bb-image.jpg) 0 0 no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+/* line 6, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .page-overview {
+  width: 85%;
+  margin: 50px auto;
+  background-color: #edeff2;
+  padding: 25px;
+  border: 5px solid #c62917;
+}
+/* line 13, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .page-overview h1 {
+  font-family: sans-serif;
+  color: #3b5998;
+}
+/* line 18, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .page-overview p {
+  font-family: sans-serif;
+}
+/* line 23, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts {
+  width: 85%;
+  margin: 20px auto;
+  background-color: #edeff2;
+  padding: 25px;
+  border: 5px solid #c62917;
+}
+/* line 30, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts a img {
+  border: 3px solid #c62917;
+  height: 200px;
+  width: 300px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+/* line 39, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-title {
+  display: inline-block;
+}
+/* line 41, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-title a h1 {
+  margin: 0;
+  font-family: sans-serif;
+  color: #3b5998;
+  font-size: 36px;
+}
+/* line 48, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-title a h1:hover {
+  color: #c62917;
+}
+/* line 53, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-author {
+  display: inline-block;
+}
+/* line 55, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-author h2 {
+  margin: 0;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+/* line 62, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/blog/_posts.scss */
+.blog-posts-overview .all-posts .post-content {
+  width: 500px;
+  float: right;
+  display: inline-block;
+}
+@import 'comments/comment.scss';
+/* line 1, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/comments/_comment.scss */
+textarea {
+  width: 100%;
+  border: 3px solid #3b5998;
+}
+
+/* line 6, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/comments/_comment.scss */
+input[type="submit"] {
+  background-color: #3b5998;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 5px;
+}
+
+/* line 14, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/comments/_comment.scss */
+li {
+  font-family: sans-serif;
+}
+
+/* line 18, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/comments/_comment.scss */
+input {
+  border: 3px solid #3b5998;
+  margin-bottom: 2px;
+  padding: 2px;
+}
+/* line 1, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_footer.scss */
+.footer {
+  background-color: #191919;
+  height: 100px;
+}
+/* line 5, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_footer.scss */
+.footer img {
+  padding: 7px;
+  height: 75px;
+  float: left;
+}
+/* line 11, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_footer.scss */
+.footer h1 {
+  color: white;
+  margin: 0;
+}
+/* line 16, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_footer.scss */
+.footer p {
+  font-family: sans-serif;
+  color: white;
+  display: inline-block;
+  padding: 20px;
+  float: left;
+}
+/* line 24, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_footer.scss */
+.footer p:hover {
+  color: #c62917;
+}
+/* line 28, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_footer.scss */
+.footer i {
+  color: white;
+  font-size: 24px;
+  display: inline-block;
+  float: right;
+  padding: 51px 15px 15px;
+}
+@media (max-width: 480px) {
+  /* line 2, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction {
+    background-color: #3b5998;
+    min-height: 55px;
+  }
+  /* line 6, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction a img {
+    height: 35px;
+    display: inline-block;
+    float: left;
+    padding: 10px 0 0 5px;
+  }
+  /* line 13, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction h1 {
+    font-size: 20px;
+    display: inline-block;
+    color: #edeff2;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  /* line 22, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  /* line 30, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction li {
+    float: left;
+  }
+  /* line 34, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* line 42, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction li a:hover {
+    background-color: #111;
+  }
+  /* line 47, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction .dropdown-menu {
+    padding: 1px;
+    display: inline-block;
+    float: right;
+    font-size: 42px;
+  }
+  /* line 52, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction .dropdown-menu a i {
+    color: #edeff2;
+  }
+  /* line 55, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction .dropdown-menu a i:hover {
+    color: #c62917;
+  }
+
+  /* line 61, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 115px;
+    background-color: #edeff2;
+    overflow: auto;
+    right: 2px;
+    top: 2px;
+    text-align: left;
+    box-shadow: 5px 5px 15px #888888;
+    font-size: 15px;
+  }
+  /* line 73, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .dropdown-content a {
+    padding: 5px 15px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #c62917;
+    font-family: sans-serif;
+  }
+  /* line 80, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .dropdown-content a p {
+    margin: 0 5px;
+  }
+  /* line 85, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .dropdown-content a:hover {
+    color: #3b5998;
+  }
+
+  /* line 90, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .dropdown-menu:hover .dropdown-content {
+    display: block;
+  }
+
+  /* line 94, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .show {
+    display: block;
+  }
+}
+@media (min-width: 481px) {
+  /* line 98, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction {
+    background-color: #3b5998;
+    min-height: 55px;
+  }
+  /* line 102, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction img {
+    height: 75px;
+    display: inline-block;
+    float: left;
+    padding: 2px 0 0 2px;
+  }
+  /* line 109, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction h1 {
+    display: inline-block;
+    color: #edeff2;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+  /* line 117, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction .icon {
+    display: inline-block;
+    float: right;
+    padding: 8px;
+  }
+  /* line 122, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction .icon i {
+    background-color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+    color: #3b5998;
+  }
+  /* line 134, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2b406e;
+  }
+  /* line 142, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction li {
+    float: left;
+  }
+  /* line 146, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* line 154, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/globalHeader/_global_header.scss */
+  .top-introduction li a:hover {
+    background-color: #91a6d4;
+  }
+}
+@media (max-width: 480px) {
+  /* line 5, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  /* line 10, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information {
+    background-color: #fff;
+    padding: 25px;
+    text-align: left;
+    border: 5px solid #c62917;
+    font-family: sans-serif;
+  }
+  /* line 17, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information img {
+    width: 100%;
+    max-height: 400px;
+    border: 3px solid #3b5998;
+  }
+  /* line 23, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information a h2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #3b5998;
+    margin: 0;
+  }
+  /* line 30, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information a h2:hover {
+    color: #c62917;
+  }
+
+  /* line 38, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field {
+    border: 5px solid #c62917;
+  }
+  /* line 41, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about {
+    padding: 10px;
+  }
+  /* line 44, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about a h1 {
+    display: inline-block;
+    color: #3b5998;
+    margin: 0;
+  }
+  /* line 50, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about a h1:hover {
+    color: #c62917;
+  }
+}
+@media (min-width: 481px) {
+  /* line 58, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post {
+    background: url("/assets/background-bb-image.jpg") 0 0 no-repeat;
+    background-size: cover;
+    overflow: auto;
+  }
+  /* line 63, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 42px;
+  }
+  /* line 67, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+  }
+  /* line 72, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information {
+    background-color: #fff;
+    padding: 25px;
+    text-align: left;
+    border: 5px solid #c62917;
+    font-family: sans-serif;
+  }
+  /* line 79, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information img {
+    width: 100%;
+    max-height: 400px;
+    border: 3px solid #3b5998;
+  }
+  /* line 85, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information a h2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #3b5998;
+    margin: 0;
+  }
+  /* line 92, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information a h2:hover {
+    color: #c62917;
+  }
+
+  /* line 101, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field {
+    border: 5px solid #c62917;
+  }
+  /* line 104, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about {
+    padding: 10px;
+  }
+  /* line 107, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about a h1 {
+    display: inline-block;
+    color: #3b5998;
+    margin: 0;
+  }
+  /* line 113, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about a h1:hover {
+    color: #c62917;
+  }
+}
+/* line 1, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post {
+  background: url(/assets/background-bb-image.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+/* line 6, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .description {
+  background-color: #edeff2;
+  text-align: left;
+  border: 5px solid #c62917;
+  margin-bottom: 30px;
+}
+/* line 12, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .description h1 {
+  margin: 15px;
+  font-family: sans-serif;
+  color: #3b5998;
+}
+/* line 18, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .description p {
+  margin: 15px;
+  font-family: sans-serif;
+  color: #3b5998;
+}
+/* line 27, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .posts .post {
+  border: 5px solid #c62917;
+  margin-bottom: 25px;
+  background-color: #edeff2;
+  height: 250px;
+}
+/* line 33, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .posts .post h1 {
+  margin: 15px;
+  font-family: sans-serif;
+  color: #3b5998;
+  display: inline-block;
+}
+/* line 40, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .posts .post h1:hover {
+  color: #c62917;
+}
+/* line 44, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .posts .post img {
+  margin: 25px;
+  height: 200px;
+  width: 300px;
+  float: right;
+  border: 3px solid #3b5998;
+}
+/* line 52, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .posts .post p {
+  width: 800px;
+  margin: 15px;
+  font-family: sans-serif;
+}
+@media (max-width: 480px) {
+  /* line 5, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  /* line 10, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information {
+    background-color: #fff;
+    padding: 25px;
+    text-align: left;
+    border: 5px solid #c62917;
+    font-family: sans-serif;
+  }
+  /* line 17, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information img {
+    width: 100%;
+    max-height: 400px;
+    border: 3px solid #3b5998;
+  }
+  /* line 23, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information a h2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #3b5998;
+    margin: 0;
+  }
+  /* line 30, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information a h2:hover {
+    color: #c62917;
+  }
+
+  /* line 38, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field {
+    border: 5px solid #c62917;
+  }
+  /* line 41, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about {
+    padding: 10px;
+  }
+  /* line 44, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about a h1 {
+    display: inline-block;
+    color: #3b5998;
+    margin: 0;
+  }
+  /* line 50, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about a h1:hover {
+    color: #c62917;
+  }
+}
+@media (min-width: 481px) {
+  /* line 58, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post {
+    background: url("/assets/background-bb-image.jpg") 0 0 no-repeat;
+    background-size: cover;
+    overflow: auto;
+  }
+  /* line 63, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 42px;
+  }
+  /* line 67, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+  }
+  /* line 72, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information {
+    background-color: #fff;
+    padding: 25px;
+    text-align: left;
+    border: 5px solid #c62917;
+    font-family: sans-serif;
+  }
+  /* line 79, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information img {
+    width: 100%;
+    max-height: 400px;
+    border: 3px solid #3b5998;
+  }
+  /* line 85, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information a h2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #3b5998;
+    margin: 0;
+  }
+  /* line 92, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .show-recent-post #screen .quick-view .post-information a h2:hover {
+    color: #c62917;
+  }
+
+  /* line 101, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field {
+    border: 5px solid #c62917;
+  }
+  /* line 104, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about {
+    padding: 10px;
+  }
+  /* line 107, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about a h1 {
+    display: inline-block;
+    color: #3b5998;
+    margin: 0;
+  }
+  /* line 113, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_homepage.scss */
+  .category-field .category-about a h1:hover {
+    color: #c62917;
+  }
+}
+/* line 1, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post {
+  background: url(/assets/background-bb-image.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+/* line 6, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .description {
+  background-color: #edeff2;
+  text-align: left;
+  border: 5px solid #c62917;
+  margin-bottom: 30px;
+}
+/* line 12, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .description h1 {
+  margin: 15px;
+  font-family: sans-serif;
+  color: #3b5998;
+}
+/* line 18, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .description p {
+  margin: 15px;
+  font-family: sans-serif;
+  color: #3b5998;
+}
+/* line 27, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .posts .post {
+  border: 5px solid #c62917;
+  margin-bottom: 25px;
+  background-color: #edeff2;
+  height: 250px;
+}
+/* line 33, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .posts .post h1 {
+  margin: 15px;
+  font-family: sans-serif;
+  color: #3b5998;
+  display: inline-block;
+}
+/* line 40, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .posts .post h1:hover {
+  color: #c62917;
+}
+/* line 44, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .posts .post img {
+  margin: 25px;
+  height: 200px;
+  width: 300px;
+  float: right;
+  border: 3px solid #3b5998;
+}
+/* line 52, /Users/dylanmatthews/Desktop/ruby_apps/AverageJoeFantasyTalk/app/assets/stylesheets/home/_subpage.scss */
+.category-post .posts .post p {
+  width: 800px;
+  margin: 15px;
+  font-family: sans-serif;
+}
+body{margin:0}
+@import 'globalHeader/global_header.scss';
+@import 'globalHeader/global_footer.scss';
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
