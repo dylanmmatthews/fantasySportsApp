@@ -1,3 +1,15 @@
+<% content_for :head do %>
+	<!-- Facebook Meta Tags -->
+	<meta property="og:title" content="<%= @post.title %>"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="<%= image_tag("#{@post.hero_image}") %>" />
+	<meta property="og:description" content="<%= @post.summary %>" />
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="<%= @post.summary %>"/>
+	<meta name="twitter:title" content="<%= @post.title %>" />
+	<meta name="twitter:image" content="<%= image_tag("#{@post.hero_image}") %>"/>
+<% end %>
+
 <div class="blog-post-content">
 	<div class="screen">
 		<div class="blog-post">
@@ -14,7 +26,7 @@
 			<div class="social-share">
 				<div class="btn-social">
 					<a class="js-social-share twitter" style="color: #64ACD1"
-					href="https://twitter.com/intent/tweet?text=“<%= yield :title %>”&url=<%= yield :url %>&via=twitter" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')">
+					href="https://twitter.com/intent/tweet?text=“<%= @post.title %>”&url=<%= yield :url %>&via=twitter" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')">
 						<i class="fa fa-twitter" aria-hidden="true">
 						</i>
 					</a>
