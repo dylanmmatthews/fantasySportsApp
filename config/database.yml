@@ -1,31 +1,38 @@
-# MySQL. Versions 5.0 and up are supported.
-#
-# Install the MySQL driver
-#   gem install mysql2
-#
-# Ensure the MySQL gem is defined in your Gemfile
-#   gem 'mysql2'
-#
-# And be sure to use new-style password hashing:
-#   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
-#
-default: &default
-  adapter: mysql2
-  encoding: utf8
-  username: root
-  password:
-  host: 127.0.0.1
-  port: 3306
-
 development:
-  <<: *default
-  database: AverageJoeFantasyTalk_development
+  adapter: postgresql
+  encoding: unicode
+  database: religious-fantasy
+  pool: 5
+  username:
+  password: 
+  template: template0
+  host: localhost
+  port: 5432
 
-test:
-  <<: *default
-  database: AverageJoeFantasyTalk_test
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  database: religous-fantasy-test
+  pool: 5
+  username: 
+  password: 
+  template: template0
+  host: localhost
+  port: 5432
+
+staging:
+  adapter: postgresql
+  encoding: unicode
+  database: religous-fantasy-production
+  pool: 5
+  username:
+  password:
+  template: template0
+  host: localhost
 
 production:
-  <<: *default
-  database: AverageJoeFantasyTalk_production
-
+  adapter: postgresql
+  encoding: unicode
+  database: religous-fantasy-production
+  pool: 5
+  username:

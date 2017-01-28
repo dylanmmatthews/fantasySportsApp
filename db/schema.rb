@@ -9,20 +9,24 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
+
 ActiveRecord::Schema.define(version: 20170119232715) do
 
-  create_table "authors", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "authors", force: :cascade do |t|
     t.string   "author"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "blog_posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "blog_posts", force: :cascade do |t|
     t.string   "title"
     t.string   "summary"
-    t.text     "content",                 limit: 65535
-    t.datetime "created_at",                            null: false
-    t.datetime "updated_at",                            null: false
+    t.text     "content"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
     t.integer  "author_id"
     t.integer  "category_id"
     t.string   "hero_image_file_name"
@@ -33,13 +37,13 @@ ActiveRecord::Schema.define(version: 20170119232715) do
     t.index ["category_id"], name: "index_blog_posts_on_category_id", using: :btree
   end
 
-  create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "categories", force: :cascade do |t|
     t.string   "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "ckeditor_assets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
     t.string   "data_content_type"
     t.integer  "data_file_size"
@@ -55,16 +59,16 @@ ActiveRecord::Schema.define(version: 20170119232715) do
     t.index ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
   end
 
-  create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.text     "body",             limit: 65535
+  create_table "comments", force: :cascade do |t|
+    t.text     "body"
     t.integer  "commentable_id"
     t.string   "commentable_type"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
     t.string   "name"
   end
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "users", force: :cascade do |t|
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "email",                  default: "", null: false
@@ -79,6 +83,7 @@ ActiveRecord::Schema.define(version: 20170119232715) do
     t.string   "last_sign_in_ip"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  end
 
   add_foreign_key "blog_posts", "authors"
   add_foreign_key "blog_posts", "categories"
