@@ -56,7 +56,7 @@
 }
 @media (min-width: 481px) {
 	.show-recent-post {
-		background: url('/assets/background-bb-image.jpg') 0 0 no-repeat; 
+		background: image-url('/assets/background-bb-image.jpg') 0 0 no-repeat; 
 		background-size: cover;
 		overflow: auto;
 
